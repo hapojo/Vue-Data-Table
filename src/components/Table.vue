@@ -6,19 +6,18 @@
         <div class="data-type">
             <div class="type-all">
                 <ul>
-                    <li :class="selectedCategory == 'all' ? 'activecat' : 'inactivecat'" @click="categoryChange('all')">
+                    <li :class="selectedAction == 'All' ? 'activecat' : 'inactivecat'" @click="categoryChange('All')">
                         All
                     </li>
-                    <li :class="selectedCategory == 'paid' ? 'activecat' : 'inactivecat'"
-                        @click="categoryChange('paid')">
+                    <li :class="selectedAction == 'Paid' ? 'activecat' : 'inactivecat'" @click="categoryChange('Paid')">
                         Paid
                     </li>
-                    <li :class="selectedCategory == 'unpaid' ? 'activecat' : 'inactivecat'"
-                        @click="categoryChange('unpaid')">
+                    <li :class="selectedAction == 'Unpaid' ? 'activecat' : 'inactivecat'"
+                        @click="categoryChange('Unpaid')">
                         Unpaid
                     </li>
-                    <li :class="selectedCategory == 'overdue' ? 'activecat' : 'inactivecat'"
-                        @click="categoryChange('overdue')">
+                    <li :class="selectedAction == 'Overdue' ? 'activecat' : 'inactivecat'"
+                        @click="categoryChange('Overdue')">
                         Overdue
                     </li>
                 </ul>
@@ -31,17 +30,27 @@
         <div>
             <div class="content-section">
                 <div class="card-table">
-                    <DataTable v-model:selection="selectedUsers" v-model:expandedRows="expandedRows" :value="users"
-                        dataKey="id" v-model:filters="filters1" filterDisplay="menu" responsiveLayout="scroll"
-                        :globalFilterFields="['name', 'category.name', 'amount.name', 'status']" :selectAll="selectAll">
+                    <DataTable v-model:selection="selectedUsers" v-model:expandedRows="expandedRows"
+                        :value="selectedData" dataKey="id" v-model:filters="filters1" filterDisplay="menu"
+                        :paginator="true" :rows="10"
+                        currentPageReportTemplate="Rows per page: {first} - {last} of {totalRecords}"
+                        :rowsPerPageOptions="[10]"
+                        paginatorTemplate="CurrentPageReport RowsPerPageDropdown FirstPageLink  LastPageLink "
+                        responsiveLayout="scroll"
+                        :globalFilterFields="['name', 'userAction', 'userStatus', 'paymentStatus', 'paymentAction']"
+                        :selectAll="selectAll">
                         <template #header>
                             <div
                                 class="table-header-container flex flex-column md:flex-row md:justify-content-between md:align-items-center">
                                 <div>
-                                    <Button type="button" class="p-button-outlined" @click="clearFilter1()"> <i
-                                            class="pi pi-filter-fill"></i> Filter </Button>
+                                    <!-- <Button type="button" class="p-button-outlined" @click="clearFilter1()"> <i
+                                            class="pi pi-filter-fill"></i> Filter </Button> -->
+                                    <MultiSelect :modelValue="selectedColumns" :options="column" optionLabel="header"
+                                        @update:modelValue="onToggle" placeholder="Select Columns"
+                                        style="width: 20em" />
                                     <span class="p-input-icon-left">
-                                        <InputText class="search-filter pi pi-search" v-model="filters1['global'].value"
+                                        <!-- <i class="pi pi-search search-icon"></i> -->
+                                        <InputText class="pi pi-search search-filter" v-model="filters1['global'].value"
                                             placeholder="Search Users by Name, Email or Date" />
                                     </span>
                                 </div>
@@ -53,17 +62,23 @@
 
                         <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
                         <Column :expander="true" headerStyle="width: 3rem" />
-                        <Column field="name" header="Name">
+                        <Column field="name" header="Name" v-for="(col, index) of selectedColumns" :field="col.field"
+                            :header="col.header" :key="col.field + '_' + index">
                             <template #body="slotProps">
-                                <span>{{ slotProps.data.name }}</span> <br>
-                                <span>{{ slotProps.data.email }}</span>
+                                <div class="user-name">{{ slotProps.data.name }}</div>
+                                <div class="user-email">{{ slotProps.data.email }}</div>
                             </template>
                         </Column>
 
                         <Column field="userStatus" header="User Status">
                             <template #body="slotProps">
-                                <span>{{ slotProps.data.userAction }}</span> <br>
-                                <span>{{ slotProps.data.userStatus }}</span>
+                                <div class="user-action"
+                                    :class="{ 'active': slotProps.data.userAction == 'Active', 'inactive': slotProps.data.userAction == 'Inactive' }">
+                                    <i class="pi pi-circle-fill"></i> {{
+                                        slotProps.data.userAction
+                                    }}
+                                </div>
+                                <div class="user-status">{{ slotProps.data.userStatus }}</div>
                             </template>
                         </Column>
                         <Column field="paymentStatus" header="Payment Status">
@@ -73,25 +88,29 @@
                                     <i class="pi pi-circle-fill"></i>
                                     {{ slotProps.data.paymentStatus }}
                                 </div>
-                                <span>{{ slotProps.data.paymentAction }}</span>
+                                <div class="payment-status">{{ slotProps.data.paymentAction }}</div>
                             </template>
                         </Column>
                         <Column field="amount" header="Amount">
                             <template #body="slotProps">
-                                <span>{{ slotProps.data.amount }}</span> <br>
-                                <span>{{ slotProps.data.amountCurrency }}</span>
+                                <div class="amount">{{ slotProps.data.amount }}</div>
+                                <div class="amount-currency">{{ slotProps.data.amountCurrency }}</div>
+                                <div class="view-more">View More</div>
+
                             </template>
+                        </Column>
+                        <Column class="pi pi-ellipsis-v">
                         </Column>
                         <template #expansion="slotProps">
                             <div class="orders-subtable">
                                 <DataTable :value="slotProps.data.orders" responsiveLayout="scroll">
                                     <Column field="date" header="Date"></Column>
                                     <Column field="userActivity" header="User Activity"></Column>
-                                    <Column field="detail" header="Detail">
+                                    <Column field="userDetail" header="Detail">
                                         <template #body="slotProps">
                                             <span>{{ slotProps.data.date }}</span>
                                             <span>{{ slotProps.data.userActivity }}</span>
-                                            <span>{{ slotProps.data.Detail }}</span>
+                                            <span>{{ slotProps.data.userDetail }}</span>
                                         </template>
                                     </Column>
                                 </DataTable>
@@ -117,16 +136,18 @@ export default {
         return {
             selectedUsers: null,
             selectedData: [],
+            selectedAction: "",
             selectedCategory: "",
             users: [],
             expandedRows: [],
             filters1: {
                 'global': { value: null, matchMode: FilterMatchMode.CONTAINS },
                 'name': { value: null, matchMode: FilterMatchMode.STARTS_WITH },
-                'category.name': { value: null, matchMode: FilterMatchMode.STARTS_WITH },
-                'amount.name': { value: null, matchMode: FilterMatchMode.IN },
-                'status': { value: null, matchMode: FilterMatchMode.EQUALS },
-                'verified': { value: null, matchMode: FilterMatchMode.EQUALS }
+                'userAction': { value: null, matchMode: FilterMatchMode.STARTS_WITH },
+                'userStatus': { value: null, matchMode: FilterMatchMode.IN },
+                'paymentStatus': { value: null, matchMode: FilterMatchMode.EQUALS },
+                'amount': { value: null, matchMode: FilterMatchMode.EQUALS },
+                'amountCurrency': { value: null, matchMode: FilterMatchMode.EQUALS }
             },
 
         }
@@ -134,24 +155,41 @@ export default {
     userService: null,
     created() {
         this.userService = new Users();
+        // this.columns = [
+        //     { field: 'name', header: 'name' },
+        //     { field: 'paymentAction', header: 'Due Date' },
+        //     { field: 'userStaus', header: 'Last Login' },
+        //     { field: 'all', header: 'All' },
+        //     { field: 'userAction', header: 'Active' },
+        //     { field: 'userAction', header: 'Inactive' }
+
+        // ];
+
+        this.column = this.users
+
+        this.selectedColumns = this.column;
     },
     mounted() {
-        this.selectedData = this.allData
-        this.selectedCategory = "all"
+        this.selectedAction = "All"
         this.userService.getUsers().then(data => {
             this.users = data
+            this.selectedData = this.users
         });
     },
     methods: {
-        categoryChange(category) {
-            this.selectedCategory = category
-            if (category == "all") {
-                this.selectedData = this.allData
+        categoryChange(action) {
+            this.selectedAction = action
+            if (action == "All") {
+                this.selectedData = this.users
             }
             else {
-                this.selectedData = this.allData.filter(x => x.category == category)
+                this.selectedData = this.users.filter(x => x.paymentStatus == action)
             }
 
+        },
+
+        onToggle(value) {
+            this.selectedColumns = this.columns.filter(col => value.includes(col));
         },
 
         onRowExpand(event) {
@@ -175,13 +213,11 @@ export default {
             this.filters1 = {
                 'global': { value: null, matchMode: FilterMatchMode.CONTAINS },
                 'name': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] },
-                'category.name': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] },
-                'amount.name': { value: null, matchMode: FilterMatchMode.IN },
-                'date': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.DATE_IS }] },
-                'balance': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }] },
-                'status': { operator: FilterOperator.OR, constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }] },
-                'activity': { value: null, matchMode: FilterMatchMode.BETWEEN },
-                'verified': { value: null, matchMode: FilterMatchMode.EQUALS }
+                'userAction': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] },
+                'userStatus': { value: null, matchMode: FilterMatchMode.IN },
+                'paymentStatus': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.DATE_IS }] },
+                'amount': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }] },
+                'amountCurrency': { operator: FilterOperator.OR, constraints: [{ value: null, matchMode: FilterMatchMode.EQUALS }] }
             }
 
         }

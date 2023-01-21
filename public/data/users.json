@@ -14,22 +14,22 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -37,7 +37,7 @@
             "id": 2,
             "name": "Cheyenne Ekstrom Bothman",
             "email": "example@email.com",
-            "userAction": "inctive",
+            "userAction": "Inactive",
             "userStatus": "Last login: 14/APR/2020",
             "paymentStatus": "Paid",
             "paymentAction": "Paid on 15/APR/2020",
@@ -47,12 +47,12 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -70,12 +70,12 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -83,7 +83,7 @@
             "id": 4,
             "name": "Miracle Vaccaro",
             "email": "example@email.com",
-            "userAction": "Paid",
+            "userAction": "Inactive",
             "userStatus": "Last login: 14/APR/2020",
             "paymentStatus": "Overdue",
             "paymentAction": "Paid on 15/APR/2020",
@@ -105,12 +105,12 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -118,7 +118,7 @@
             "id": 6,
             "name": "Mira Herwitz",
             "email": "example@email.com",
-            "userAction": "inactive",
+            "userAction": "Inactive",
             "userStatus": "Last login: 14/APR/2020",
             "paymentStatus": "Paid",
             "paymentAction": "Paid on 15/APR/2020",
@@ -128,17 +128,17 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -146,7 +146,7 @@
             "id": 7,
             "name": "Jaxson Siphron",
             "email": "example@email.com",
-            "userAction": "inactive",
+            "userAction": "Inactive",
             "userStatus": "Last login: 14/APR/2020",
             "paymentStatus": "Paid",
             "paymentAction": "Paid on 15/APR/2020",
@@ -156,12 +156,12 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -179,7 +179,7 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -189,7 +189,7 @@
             "email": "example@email.com",
             "userAction": "Active",
             "userStatus": "Last login: 14/APR/2020",
-            "paymentStatus": "paid",
+            "paymentStatus": "Paid",
             "paymentAction": "Paid on 15/APR/2020",
             "amount": "$300",
             "amountCurrency": "USD",
@@ -197,12 +197,12 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         },
@@ -210,7 +210,7 @@
             "id": 10,
             "name": "Phillip Saris",
             "email": "example@email.com",
-            "userAction": "inactive",
+            "userAction": "Inactive",
             "userStatus": "Last login: 14/APR/2020",
             "paymentStatus": "Unpaid",
             "paymentAction": "Paid on 15/APR/2020",
@@ -220,22 +220,78 @@
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 },
                 {
                     "date": "12/APR/2020",
                     "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
-                    "Detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Phillip Saris",
+            "email": "example@email.com",
+            "userAction": "Inactive",
+            "userStatus": "Last login: 14/APR/2020",
+            "paymentStatus": "Unpaid",
+            "paymentAction": "Paid on 15/APR/2020",
+            "amount": "$300",
+            "amountCurrency": "USD",
+            "orders": [
+                {
+                    "date": "12/APR/2020",
+                    "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                },
+                {
+                    "date": "12/APR/2020",
+                    "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                },
+                {
+                    "date": "12/APR/2020",
+                    "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                },
+                {
+                    "date": "12/APR/2020",
+                    "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Lincoln Levin",
+            "email": "example@email.com",
+            "userAction": "Active",
+            "userStatus": "Last login: 14/APR/2020",
+            "paymentStatus": "Paid",
+            "paymentAction": "Paid on 15/APR/2020",
+            "amount": "$300",
+            "amountCurrency": "USD",
+            "orders": [
+                {
+                    "date": "12/APR/2020",
+                    "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
+                },
+                {
+                    "date": "12/APR/2020",
+                    "userActivity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies.",
+                    "userDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum."
                 }
             ]
         }

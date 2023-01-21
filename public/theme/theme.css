@@ -573,7 +573,7 @@ p-calendar.ng-dirty.ng-invalid>.p-calendar>.p-inputtext {
     font-size: 0.875rem;
 }
 
-p-cascadeselect.ng-dirty.ng-invalid>.p-cascadeselect {
+.p-cascadeselect.ng-dirty.ng-invalid>.p-cascadeselect {
     border-color: #f44336;
 }
 
@@ -606,17 +606,17 @@ p-cascadeselect.ng-dirty.ng-invalid>.p-cascadeselect {
 
 .p-checkbox .p-checkbox-box .p-checkbox-icon {
     transition-duration: 0.2s;
-    color: #f8fafc;
+    color: #1B74C5;
     font-size: 14px;
 }
 
 .p-checkbox .p-checkbox-box.p-highlight {
     border-color: #1B74C5;
-    background: #1B74C5;
+    background: #F4F2FF;
 }
 
 .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
-    border-color: #1B74C5;
+    border-color: #F4F2FF;
 }
 
 .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
@@ -628,11 +628,11 @@ p-cascadeselect.ng-dirty.ng-invalid>.p-cascadeselect {
 
 .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
     border-color: #0D438D;
-    background: #0D438D;
+    background: #F4F2FF;
     color: #f8fafc;
 }
 
-p-checkbox.ng-dirty.ng-invalid>.p-checkbox>.p-checkbox-box {
+.p-checkbox.ng-dirty.ng-invalid>.p-checkbox>.p-checkbox-box {
     border-color: #f44336;
 }
 
@@ -641,7 +641,7 @@ p-checkbox.ng-dirty.ng-invalid>.p-checkbox>.p-checkbox-box {
 }
 
 .p-input-filled .p-checkbox .p-checkbox-box.p-highlight {
-    background: #1B74C5;
+    background: #F4F2FF;
 }
 
 .p-input-filled .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
@@ -649,7 +649,7 @@ p-checkbox.ng-dirty.ng-invalid>.p-checkbox>.p-checkbox-box {
 }
 
 .p-input-filled .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
-    background: #0D438D;
+    background: #F4F2FF;
 }
 
 .p-checkbox-label {
@@ -842,7 +842,7 @@ p-chips.ng-dirty.ng-invalid>.p-chips>.p-inputtext {
     font-weight: 600;
 }
 
-p-dropdown.ng-dirty.ng-invalid>.p-dropdown {
+.p-dropdown.ng-dirty.ng-invalid>.p-dropdown {
     border-color: #f44336;
 }
 
@@ -1464,7 +1464,7 @@ p-listbox.ng-dirty.ng-invalid>.p-listbox {
     background: transparent;
 }
 
-p-multiselect.ng-dirty.ng-invalid>.p-multiselect {
+.p-multiselect.ng-dirty.ng-invalid>.p-multiselect {
     border-color: #f44336;
 }
 
@@ -1480,7 +1480,7 @@ p-multiselect.ng-dirty.ng-invalid>.p-multiselect {
     background-color: #FDFEFF;
 }
 
-p-password.ng-invalid.ng-dirty>.p-password>.p-inputtext {
+.p-password.ng-invalid.ng-dirty>.p-password>.p-inputtext {
     border-color: #f44336;
 }
 
@@ -1554,7 +1554,7 @@ p-password.ng-invalid.ng-dirty>.p-password>.p-inputtext {
     color: #f8fafc;
 }
 
-p-radiobutton.ng-dirty.ng-invalid>.p-radiobutton>.p-radiobutton-box {
+.p-radiobutton.ng-dirty.ng-invalid>.p-radiobutton>.p-radiobutton-box {
     border-color: #f44336;
 }
 
@@ -1865,7 +1865,7 @@ p-treeselect.ng-invalid.ng-dirty>.p-treeselect {
 .p-button {
     color: #f8fafc;
     background: #1B74C5;
-    border: 1px solid #1B74C5;
+    border: 1px solid #C6C2DE;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
@@ -1886,8 +1886,9 @@ p-treeselect.ng-invalid.ng-dirty>.p-treeselect {
 
 .p-button.p-button-outlined {
     background-color: transparent;
-    color: #1B74C5;
-    border: 1px solid;
+    color: #25213B;
+    border: 1px solid #C6C2DE;
+    border-radius: 6px;
 }
 
 .p-button.p-button-outlined:enabled:hover {
@@ -2765,7 +2766,7 @@ p-treeselect.ng-invalid.ng-dirty>.p-treeselect {
     background: #FDFEFF;
     color: #515C66;
     transition: box-shadow 0.2s;
-    outline-color: #4D9FDC;
+    outline-color: #F4F2FF;
 }
 
 .p-datatable .p-datatable-tbody>tr>td {
@@ -2811,8 +2812,8 @@ p-treeselect.ng-invalid.ng-dirty>.p-treeselect {
 }
 
 .p-datatable .p-datatable-tbody>tr.p-highlight {
-    background: #1B74C5;
-    color: #f8fafc;
+    background: #F4F2FF;
+    color: #1B74C5;
 }
 
 .p-datatable .p-datatable-tbody>tr.p-datatable-dragpoint-top>td {
@@ -3883,7 +3884,7 @@ p-treeselect.ng-invalid.ng-dirty>.p-treeselect {
 }
 
 .p-tree .p-tree-container .p-treenode .p-treenode-content .p-checkbox .p-indeterminate .p-checkbox-icon {
-    color: #515C66;
+    color: #1B74C5;
 }
 
 .p-tree .p-tree-container .p-treenode .p-treenode-content:focus {
@@ -4113,11 +4114,11 @@ p-treeselect.ng-invalid.ng-dirty>.p-treeselect {
     box-shadow: 0 0 0 0.2rem #4D9FDC;
 }
 
-.p-treetable .p-treetable-tbody>tr>td p-treetablecheckbox .p-checkbox {
+.p-treetable .p-treetable-tbody>tr>td .p-treetablecheckbox .p-checkbox {
     margin-right: 0.5rem;
 }
 
-.p-treetable .p-treetable-tbody>tr>td p-treetablecheckbox .p-checkbox .p-indeterminate .p-checkbox-icon {
+.p-treetable .p-treetable-tbody>tr>td .p-treetablecheckbox .p-checkbox .p-indeterminate .p-checkbox-icon {
     color: #515C66;
 }
 

@@ -95,7 +95,7 @@
 
 .search-filter {
     width: 300px;
-    /* padding: 15px; */
+    padding: 12px;
     background: #F4F2FF;
     border: #F4F2FF;
     color: #6E6893;
@@ -103,12 +103,65 @@
     margin-left: 20px;
 }
 
+
 .pay-button {
     background: #6D5BD0;
     border: #6D5BD0;
     border-radius: 6px;
     padding: 10px;
     color: #FFFFFF;
+}
+
+
+.user-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25213B;
+}
+
+.user-email {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E6893;
+}
+
+.user-action {
+    padding: 4px 5px;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-action i {
+    font-size: 7px;
+}
+
+.active {
+    background-color: #E6E6F2;
+    color: #4A4AFF;
+}
+
+.inactive {
+    background-color: #F2F0F9;
+    color: #6E6893;
+}
+
+.user-status {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6E6893;
 }
 
 .status-badge {
@@ -138,4 +191,33 @@
 
 .status-badge i {
     font-size: 7px;
+}
+
+.payment-status,
+.amount {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #25213B;
+}
+
+.amount-currency {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6E6893;
+}
+
+.view-more {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6E6893;
+    text-align: right;
 }
