@@ -43,13 +43,9 @@
                             <div
                                 class="table-header-container flex flex-column md:flex-row md:justify-content-between md:align-items-center">
                                 <div>
-                                    <!-- <Button type="button" class="p-button-outlined" @click="clearFilter1()"> <i
-                                            class="pi pi-filter-fill"></i> Filter </Button> -->
-                                    <MultiSelect :modelValue="selectedColumns" :options="column" optionLabel="header"
-                                        @update:modelValue="onToggle" placeholder="Select Columns"
-                                        style="width: 20em" />
+                                    <Button type="button" class="p-button-outlined" @click="clearFilter1()"> <i
+                                            class="pi pi-filter-fill"></i> Filter </Button>
                                     <span class="p-input-icon-left">
-                                        <!-- <i class="pi pi-search search-icon"></i> -->
                                         <InputText class="pi pi-search search-filter" v-model="filters1['global'].value"
                                             placeholder="Search Users by Name, Email or Date" />
                                     </span>
@@ -155,15 +151,6 @@ export default {
     userService: null,
     created() {
         this.userService = new Users();
-        // this.columns = [
-        //     { field: 'name', header: 'name' },
-        //     { field: 'paymentAction', header: 'Due Date' },
-        //     { field: 'userStaus', header: 'Last Login' },
-        //     { field: 'all', header: 'All' },
-        //     { field: 'userAction', header: 'Active' },
-        //     { field: 'userAction', header: 'Inactive' }
-
-        // ];
 
         this.column = this.users
 
